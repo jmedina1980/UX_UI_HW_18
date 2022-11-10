@@ -1,106 +1,154 @@
-
 body {
-    margin: 0;
-    font-family: Futura, Helvetica, sans-serif;
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #3A3A3A;
-    height: 70px;
-  }
-  
-  .topnav a {
-    float: right;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 15px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: #E53B64;
-  }
-  
-  .topnav a.active {
-    background-color: darkgray;
-    color: #E53B64;
-  }
+  margin: 0;
+  font-family: Futura, Helvetica, sans-serif;
+  background-color: darkgray;
+}
+
+/* --  NAVIGATION BAR -- */
+
+.topnav {
+  overflow: hidden;
+  background-color: #3A3A3A;
+  height: 70px;
+}
+
+.topnav a {
+  float: right;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #E53B64;
+}
+
+.topnav a.active {
+  background-color: darkgray;
+  color: #E53B64;
+}
 
 .inline-block {
-    display: inline-block;
-    vertical-align: top;
+  display: inline-block;
+  vertical-align: top;
 }
 
 #logo {
-    float: left;
-    display: inline-block;
-}
-
-.name {
   float: left;
   display: inline-block;
 }
 
 nav {
-    width: 100%;
-    padding: 1%;
-    text-align: center;
-    
+  width: 100%;
+  padding: 1%;
+  text-align: center;
+
 }
+
+/* --  HERO SECTION -- */
 
 .hero-image {
-    display: flex;
-    flex-direction: column;
-    background-image: url("i/Users/jam/Documents/MyCode/Challenges/UX_UI_HW17/images/hero.jpg");
-   background-color: black;
-    height: 100%;
-    width: 100%;
-    align-self: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .hero-text {
-    text-align: left;
-    position: absolute;
-    top: 45%;
-    right: 3%;
-    transform: translate(-50%, -50%);
-    color: white;
-    background-color: #3A3A3A;
-    padding: 2%;
-    opacity:0.81;
-    width: 210px;
-    height: 290px;
-    font-size: small;
-  }
-  
-  .hero-text button {
-    border: none;
-    outline: 0;
-    display: inline-block;
-    padding: 10px 25px;
-    color: black;
-    background-color: lightblue;
-    text-align: center;
-    cursor: pointer;
-  }
-  
-  .hero-text button:hover {
-    background-color: #555;
-    color: white;
-  }
+  display: flex;
+  flex-direction: column;
+  background-image: url("/images/hero.jpg");
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  object-fit: contain;
+  align-self: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  text-align: left;
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: white;
+  background-color: #3A3A3A;
+  padding: 2%;
+  opacity: 0.81;
+  width: 210px;
+  height: 290px;
+  font-size: small;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: lightblue;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
 
 .content {
-    width: 500px;
-    margin: 0 auto;
+  width: 500px;
+  margin: 0 auto;
 }
+
+/* --  MY SKILLS -- */
+
+.flexContainer {
+  display: flex;
+  justify-content: space-around;
+  padding: 2px 16px;
+}
+
+.skillCard {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+  background-color: gray;
+  padding: 10px;
+  margin: 20px;
+}
+
+.skillCard:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* --  MY WORK -- */
+#myWork-Grid {
+  display: grid;
+  grid-template-rows: max-content 3fr 3fr 3fr max-content;
+}
+
+.project-card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  background-color: gray;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+  justify-items: center;
+  padding: 10px;
+  margin: 20px;
+}
+
+/* --  FOOTER -- */
 
 .footer {
   overflow: hidden;
@@ -110,7 +158,7 @@ nav {
   display: inline-block;
   vertical-align: top;
   padding: 0;
-    }
+}
 
 .footer a {
   float: left;
